@@ -1,41 +1,43 @@
 package modelo;
 
-
-
-public class Pagamento extends Lancamento {
-	
-	int tipo;
-	
-	public final int Dinheiro = 1;
-	public final int Cartao = 2;
+public class Pagamento {
+	private int idpagamento;
+	private String formapagamento;
 	
 	
-	public Pagamento(int tipo, String data, String descricao, double valor) {
-		super(data, descricao, valor);
-		this.tipo = tipo;
+	public int getIdpagamento() {
+		return idpagamento;
 	}
-
-
-	public Pagamento(int tipo) {
-		super();
-		this.tipo = tipo;
+	public void setIdpagamento(int idpagamento) {
+		this.idpagamento = idpagamento;
 	}
-
-
-	public int getTipo() {
-		return tipo;
+	public String getFormapagamento() {
+		return formapagamento;
 	}
-
-
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
+	public void setFormapagamento(String formapagamento) {
+		this.formapagamento = formapagamento;
 	}
-
-
+	
+	
 	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		 return "Pagamento{ " + data +  ", " + descricao + ", " + valor + "(C), " + tipo + '}';
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + idpagamento;
+		return result;
 	}
-
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pagamento other = (Pagamento) obj;
+		if (idpagamento != other.idpagamento)
+			return false;
+		return true;
+	}
+	
 }

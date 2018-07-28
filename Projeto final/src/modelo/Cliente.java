@@ -1,42 +1,42 @@
 package modelo;
 
 public class Cliente {
-	
-	private int cod_cliente;
+	private int idcliente;
 	private String nome;
 	private String sobrenome;
-	private String data_nascimento;
 	private String cpf;
-	private String email;
+	private String usuario;
 	private String senha;
+	
+	private Contato contato;
 	private Endereco endereco;
-	private ClienteContato clientecontato;
-	public PedidoProduto produtopedido;
+	
+	public Cliente() {
+		
+	}
 	
 	
-	public Cliente(int cod_cliente, String nome, String sobrenome, String data_nascimento, String cpf, String email,
-			String senha, Endereco endereco, ClienteContato clientecontato, PedidoProduto produtopedido) {
+	public Cliente(int idcliente, String nome, String sobrenome, String cpf, String usuario, String senha,
+			Contato contato, Endereco endereco) {
 		super();
-		this.cod_cliente = cod_cliente;
+		this.idcliente = idcliente;
 		this.nome = nome;
 		this.sobrenome = sobrenome;
-		this.data_nascimento = data_nascimento;
 		this.cpf = cpf;
-		this.email = email;
+		this.usuario = usuario;
 		this.senha = senha;
+		this.contato = contato;
 		this.endereco = endereco;
-		this.clientecontato = clientecontato;
-		this.produtopedido = produtopedido;
 	}
 
 
-	public int getCod_cliente() {
-		return cod_cliente;
+	public int getIdcliente() {
+		return idcliente;
 	}
 
 
-	public void setCod_cliente(int cod_cliente) {
-		this.cod_cliente = cod_cliente;
+	public void setIdcliente(int idcliente) {
+		this.idcliente = idcliente;
 	}
 
 
@@ -60,16 +60,6 @@ public class Cliente {
 	}
 
 
-	public String getData_nascimento() {
-		return data_nascimento;
-	}
-
-
-	public void setData_nascimento(String data_nascimento) {
-		this.data_nascimento = data_nascimento;
-	}
-
-
 	public String getCpf() {
 		return cpf;
 	}
@@ -80,13 +70,13 @@ public class Cliente {
 	}
 
 
-	public String getEmail() {
-		return email;
+	public String getUsuario() {
+		return usuario;
 	}
 
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
 
@@ -100,6 +90,16 @@ public class Cliente {
 	}
 
 
+	public Contato getContato() {
+		return contato;
+	}
+
+
+	public void setContato(Contato contato) {
+		this.contato = contato;
+	}
+
+
 	public Endereco getEndereco() {
 		return endereco;
 	}
@@ -110,39 +110,11 @@ public class Cliente {
 	}
 
 
-	public ClienteContato getClientecontato() {
-		return clientecontato;
-	}
-
-
-	public void setClientecontato(ClienteContato clientecontato) {
-		this.clientecontato = clientecontato;
-	}
-
-
-	public PedidoProduto getProdutopedido() {
-		return produtopedido;
-	}
-
-
-	public void setProdutopedido(PedidoProduto produtopedido) {
-		this.produtopedido = produtopedido;
-	}
-
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((clientecontato == null) ? 0 : clientecontato.hashCode());
-		result = prime * result + cod_cliente;
-		result = prime * result + ((cpf == null) ? 0 : cpf.hashCode());
-		result = prime * result + ((data_nascimento == null) ? 0 : data_nascimento.hashCode());
-		result = prime * result + ((email == null) ? 0 : email.hashCode());
-		result = prime * result + ((endereco == null) ? 0 : endereco.hashCode());
-		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-		result = prime * result + ((senha == null) ? 0 : senha.hashCode());
-		result = prime * result + ((sobrenome == null) ? 0 : sobrenome.hashCode());
+		result = prime * result + idcliente;
 		return result;
 	}
 
@@ -156,61 +128,9 @@ public class Cliente {
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		if (clientecontato == null) {
-			if (other.clientecontato != null)
-				return false;
-		} else if (!clientecontato.equals(other.clientecontato))
-			return false;
-		if (cod_cliente != other.cod_cliente)
-			return false;
-		if (cpf == null) {
-			if (other.cpf != null)
-				return false;
-		} else if (!cpf.equals(other.cpf))
-			return false;
-		if (data_nascimento == null) {
-			if (other.data_nascimento != null)
-				return false;
-		} else if (!data_nascimento.equals(other.data_nascimento))
-			return false;
-		if (email == null) {
-			if (other.email != null)
-				return false;
-		} else if (!email.equals(other.email))
-			return false;
-		if (endereco == null) {
-			if (other.endereco != null)
-				return false;
-		} else if (!endereco.equals(other.endereco))
-			return false;
-		if (nome == null) {
-			if (other.nome != null)
-				return false;
-		} else if (!nome.equals(other.nome))
-			return false;
-		if (senha == null) {
-			if (other.senha != null)
-				return false;
-		} else if (!senha.equals(other.senha))
-			return false;
-		if (sobrenome == null) {
-			if (other.sobrenome != null)
-				return false;
-		} else if (!sobrenome.equals(other.sobrenome))
+		if (idcliente != other.idcliente)
 			return false;
 		return true;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}	
-	
-	
-	
-	
+
+}
