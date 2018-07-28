@@ -25,13 +25,13 @@ DROP TABLE IF EXISTS `cliente`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `cliente` (
-  `codcliente` int(11) NOT NULL AUTO_INCREMENT,
+  `idcliente` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `sobrenome` varchar(45) NOT NULL,
   `cpf` varchar(15) NOT NULL,
   `usuario` varchar(60) NOT NULL,
   `senha` varchar(20) NOT NULL,
-  PRIMARY KEY (`codcliente`)
+  PRIMARY KEY (`idcliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -52,12 +52,12 @@ DROP TABLE IF EXISTS `contato`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `contato` (
-  `codcontato` int(11) NOT NULL AUTO_INCREMENT,
+  `idcontato` int(11) NOT NULL AUTO_INCREMENT,
   `telefone` varchar(15) DEFAULT NULL,
   `celular` varchar(15) DEFAULT NULL,
   `emaill` varchar(80) NOT NULL,
-  PRIMARY KEY (`codcontato`),
-  CONSTRAINT `codcliente` FOREIGN KEY (`codcontato`) REFERENCES `cliente` (`codcliente`) ON DELETE CASCADE ON UPDATE CASCADE
+  PRIMARY KEY (`idcontato`),
+  CONSTRAINT `idcliente` FOREIGN KEY (`idcontato`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -78,11 +78,11 @@ DROP TABLE IF EXISTS `detalhamentopedido`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `detalhamentopedido` (
-  `coddetalhamento` int(11) NOT NULL AUTO_INCREMENT,
+  `iddetalhepedido` int(11) NOT NULL AUTO_INCREMENT,
   `quantidade` varchar(7) NOT NULL,
   `valor` double NOT NULL,
-  PRIMARY KEY (`coddetalhamento`),
-  CONSTRAINT `codproduto2` FOREIGN KEY (`coddetalhamento`) REFERENCES `produto` (`codproduto`) ON DELETE CASCADE ON UPDATE CASCADE
+  PRIMARY KEY (`iddetalhepedido``),
+  CONSTRAINT `idproduto2` FOREIGN KEY (`iddetalhepedido``) REFERENCES `produto` (`idproduto`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -103,15 +103,15 @@ DROP TABLE IF EXISTS `endereco`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `endereco` (
-  `codendereco` int(11) NOT NULL AUTO_INCREMENT,
+  `idendereco` int(11) NOT NULL AUTO_INCREMENT,
   `logradouro` varchar(50) NOT NULL,
   `numero` varchar(80) NOT NULL,
   `complemento` varchar(80) NOT NULL,
   `cidade` varchar(80) NOT NULL,
   `bairro` varchar(80) NOT NULL,
   `cep` varchar(20) NOT NULL,
-  PRIMARY KEY (`codendereco`),
-  CONSTRAINT `codcliente1` FOREIGN KEY (`codendereco`) REFERENCES `cliente` (`codcliente`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  PRIMARY KEY (`idendereco`),
+  CONSTRAINT `idcliente1` FOREIGN KEY (`idendereco`) REFERENCES `cliente` (`idcliente`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -132,9 +132,9 @@ DROP TABLE IF EXISTS `pagamento`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `pagamento` (
-  `codpagamento` int(11) NOT NULL AUTO_INCREMENT,
+   idpagamento` int(11) NOT NULL AUTO_INCREMENT,
   `formapagamento` varchar(10) NOT NULL,
-  PRIMARY KEY (`codpagamento`)
+  PRIMARY KEY (`idpagamento`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -158,9 +158,9 @@ CREATE TABLE `pedido` (
   `codpedido` int(11) NOT NULL AUTO_INCREMENT,
   `datapedio` varchar(10) NOT NULL,
   PRIMARY KEY (`codpedido`),
-  CONSTRAINT `codcliente2` FOREIGN KEY (`codpedido`) REFERENCES `cliente` (`codcliente`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `codpagamento` FOREIGN KEY (`codpedido`) REFERENCES `pagamento` (`codpagamento`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `codproduto` FOREIGN KEY (`codpedido`) REFERENCES `produto` (`codproduto`) ON DELETE CASCADE ON UPDATE CASCADE
+  CONSTRAINT `idcliente2` FOREIGN KEY (`idpedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `idpagamento` FOREIGN KEY (`idpedido`) REFERENCES `pagamento` (`idpagamento`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `idproduto` FOREIGN KEY (`idpedido`) REFERENCES `produto` (`idproduto`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -181,11 +181,11 @@ DROP TABLE IF EXISTS `produto`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `produto` (
-  `codproduto` int(11) NOT NULL AUTO_INCREMENT,
+  `idproduto` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(45) NOT NULL,
   `descricao` varchar(200) NOT NULL,
   `valor` double NOT NULL,
-  PRIMARY KEY (`codproduto`)
+  PRIMARY KEY (`idproduto`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
