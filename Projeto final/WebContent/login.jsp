@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Pizzaria &mdash; Login</title>
+	<title>NitPizza &mdash; Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:title" content=""/>
@@ -46,17 +46,17 @@
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-xs-2">
-					<div id="gtco-logo"><a href="index.html">
+					<div id="gtco-logo"><a href="index.jsp">
 					<img src="images/logo.png" width="100" height="100">
 					
 					</a></div>
 				</div>
 				<div class="col-xs-8 text-center menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
-						<li class="active"><a href="cardapio.html">CardÃ¡pio</a></li>
-						<li class="active"><a href="cadastro.html">Cadastro</a></li>
-						<li class="active"><a href="carrinho.html"><img src="images/cart.png" width="20" height="20"></a></li>
+						<li class="active"><a href="index.jsp">Home</a></li>
+						<li class="active"><a href="cardapio.jsp">Cardápio</a></li>
+						<li class="active"><a href="cadastro.jsp">Cadastro</a></li>
+						<li class="active"><a href="carrinho.jsp"><img src="images/cart.png" width="20" height="20"></a></li>
 					</ul>
 				</div>
 				<div class="col-xs-2 text-right hidden-xs menu-2">
@@ -117,17 +117,17 @@
 		<div class="gtco-container">
 			<div class="row row-pb-md">
 				<div class="col-md-8 gtco-widget">
-					<h3>Sobre NÃ³s</h3>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+					<h3>Sobre Nós</h3>
+					<p>A NitPizza se destaca pela qualidade dos seus produtos e a sua eficiência no atendimento.</p>
 					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.html">Saiba mais</a></p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="gtco-footer-links">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="sobre_nos.html">Sobre NÃ³s</a></li>
-						<li><a href="produtos.html">Produtos</a></li>
-						<li><a href="cursos.html">Cursos</a></li>
-						<li><a href="contato.html">Contato</a></li>
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="sobre_nos.jsp">Sobre Nós</a></li>
+						<li><a href="produtos.jsp">Produtos</a></li>
+						<li><a href="cursos.jsp">Cursos</a></li>
+						<li><a href="contato.jsp">Contato</a></li>
 					</ul>
 				</div>
 			</div>
@@ -135,7 +135,7 @@
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
-						<small class="block">&copy; 2018 Pizzaria. Todos os direitos reservados.</small> 
+						<small class="block">&copy; 2018 NitPizza. Todos os direitos reservados.</small> 
 					</p>
 					<p class="pull-right">
 						<ul class="gtco-social-icons pull-right">
