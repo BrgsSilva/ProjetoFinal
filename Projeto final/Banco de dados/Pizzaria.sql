@@ -71,33 +71,33 @@ LOCK TABLES `contato` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `detalhamentopedido`
+-- Table structure for table `detalhepedido`
 --
 
-DROP TABLE IF EXISTS `detalhamentopedido`;
+DROP TABLE IF EXISTS `detalhepedido`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `detalhamentopedido` (
-  `iddetalhamento` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `detalhepedido` (
+  `iddetalhepedido` int(11) NOT NULL AUTO_INCREMENT,
   `quantidade` varchar(7) NOT NULL,
   `valor` double NOT NULL,
   `pedido_idpedido` int(11) NOT NULL,
   `produto_idproduto1` int(11) NOT NULL,
-  PRIMARY KEY (`iddetalhamento`),
-  KEY `fk_detalhamentopedido_pedido1` (`pedido_idpedido`),
-  KEY `fk_detalhamentopedido_produto1` (`produto_idproduto1`),
-  CONSTRAINT `fk_detalhamentopedido_pedido1` FOREIGN KEY (`pedido_idpedido`) REFERENCES `pedido` (`idpedido`) ON DELETE CASCADE ON UPDATE CASCADE,
-  CONSTRAINT `fk_detalhamentopedido_produto1` FOREIGN KEY (`produto_idproduto1`) REFERENCES `produto` (`idproduto`) ON DELETE CASCADE ON UPDATE CASCADE
+  PRIMARY KEY (`iddetalhepedido`),
+  KEY `fk_detalhepedido_pedido1` (`pedido_idpedido`),
+  KEY `fk_detalhepedido_produto1` (`produto_idproduto1`),
+  CONSTRAINT `fk_detalhe_produto1` FOREIGN KEY (`produto_idproduto1`) REFERENCES `produto` (`idproduto`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `fk_detalhepedido_pedido1` FOREIGN KEY (`pedido_idpedido`) REFERENCES `pedido` (`idpedido`) ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `detalhamentopedido`
+-- Dumping data for table `detalhepedido`
 --
 
-LOCK TABLES `detalhamentopedido` WRITE;
-/*!40000 ALTER TABLE `detalhamentopedido` DISABLE KEYS */;
-/*!40000 ALTER TABLE `detalhamentopedido` ENABLE KEYS */;
+LOCK TABLES `detalhepedido` WRITE;
+/*!40000 ALTER TABLE `detalhepedido` DISABLE KEYS */;
+/*!40000 ALTER TABLE `detalhepedido` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -228,4 +228,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-07-31 10:57:39
+-- Dump completed on 2018-07-31 14:22:40
