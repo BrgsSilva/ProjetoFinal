@@ -102,9 +102,9 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
+							<img src="images/portuguesa.png" width="240" height="150" >
 						</span>
-						<h3>Austrália</h3>
+						<h3>Portuguesa</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 						<h2>R$: 45,00</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
@@ -113,9 +113,9 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
+							<img src="images/mussarela.png" width="240" height="150" >
 						</span>
-						<h3>Austrália</h3>
+						<h3>Mussarela</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.!</a></p>
 						<h2>R$: 45,00</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
@@ -130,9 +130,9 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
+							<img src="images/brigadeiro.jpg" width="240" height="150" >
 						</span>
-						<h3>Austrália</h3>
+						<h3>Brigadeiro</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet. <p>
 						<h2>R$: 45,00</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
@@ -141,9 +141,9 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
+							<img src="images/calabresa.png" width="240" height="150" >
 						</span>
-						<h3>Austrália</h3>
+						<h3>Calabresa</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 						<h2>R$: 45,00</h2>
 
@@ -153,9 +153,9 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
+							<img src="images/marguerita.png" width="240" height="150" >
 						</span>
-						<h3>Austrália</h3>
+						<h3>Marguerita</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 						<h2>R$: 45,00</h2>
 						<p><a href="#" target="_blank" class="btn btn-primary">Adicionar ao carrinho</a></p>
