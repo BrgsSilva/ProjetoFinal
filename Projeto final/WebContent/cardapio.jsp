@@ -102,7 +102,7 @@
 				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
 					<div class="feature-center">
 						<span class="icon">
-							<img src="images/brigadeiro.png" width="240" height="150" >
+							<img src="images/australia-1.png" width="240" height="150" >
 						</span>
 						<h3>Austrália</h3>
 						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
