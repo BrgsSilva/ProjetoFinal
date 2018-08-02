@@ -61,7 +61,7 @@
 				</div>
 				<div class="col-xs-2 text-right hidden-xs menu-2">
 					<ul>
-						<li class="btn-cta"><a href="login.html"><span>Login</span></a></li>
+						<li class="btn-cta"><a href="login.jsp"><span>Login</span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -119,7 +119,7 @@
 				<div class="col-md-8 gtco-widget">
 					<h3>Sobre Nós</h3>
 					<p>A NitPizza se destaca pela qualidade dos seus produtos e a sua eficiência no atendimento.</p>
-					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.html">Saiba mais</a></p>
+					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.jsp">Saiba mais</a></p>
 				</div>
 				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="gtco-footer-links">

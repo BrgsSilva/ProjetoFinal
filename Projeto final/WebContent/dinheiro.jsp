@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>NitPizza &mdash; Cardápio</title>
+	<title>NitPizza &mdash; Login</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<meta property="og:title" content=""/>
@@ -68,16 +68,43 @@
 			
 		</div>
 	</nav>
-
-
-	<header id="gtco-header" class="gtco-cover gtco-cover-sm" role="banner" style="background-image:url(images/pizza.png);">
-
+	<header id="gtco-header" class="gtco-cover" role="banner" style="background-image:url(images/pizza.png);">
 		<div class="gtco-container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 text-center">
 					<div class="display-t">
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
-							<h1>Cardápio</h1>
+							<div id="gtco-started">							
+	<div class="gtco-container">
+		<div class="row animate-box">
+			<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
+				<h2>Pagamento com dinheiro</h2>
+			</div>
+			
+			<div class="row animate-box">
+				<div class="col-md-12">
+					<form method="post" action="efetuar_login" class="form-inline">
+						<div class="col-md-4 col-sm-4">
+							<div class="form-group">
+								<p>
+									Gostaria de efetuar o pagamento com dinheiro?<br>
+
+									Envie-nos uma mensagem!<br><br>
+
+									(21)00000-0000<br><br>
+
+									Ou ligue para:<br><br>
+
+									(21) 0000-0000
+								</p>
+						    </div>		
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	                        </div>
 						</div>
 					</div>
 				</div>
@@ -85,109 +112,23 @@
 		</div>
 	</header>
 	
-	<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/green-special-2.png" width="240" height="150" >
-						</span>
-						<h3>Alcachofra</h3>
-						<p>Ingredientes: Alcachofra, berinjela, funghi, molho pesto, pimentão.</p>
-
-						<h2>R$: 38,90</h2>
-
-						<p><a href="#" class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/australia-1.png" width="240" height="150" >
-						</span>
-						<h3>Presunto</h3>
-						<p>Ingredientes: Mussarela, presunto, cebola, ovo.</p>
-
-						<h2>R$: 35,90</h2>
-
-						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/bondi-beach-1.png" width="240" height="150" >
-						</span>
-						<h3>Pizza de camarão</h3>
-						<p>Ingredientes: Mussarela, camarão, cebola, manjericão.</a></p>
-
-						<h2>R$: 51,90</h2>
-
-						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div id="gtco-features">
-		<div class="gtco-container">
-			<div class="row">
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/dads-jb-1.png" width="240" height="150" >
-						</span>
-						<h3>Mexilhão</h3>
-						<p>Ingredientes: Camarão, lula, mexilhão, polvo.<p>
-
-						<h2>R$: 59,90</h2>
-
-						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/festival-1.png" width="240" height="150" >
-						</span>
-						<h3>Portuguesa</h3>
-						<p>Ingredientes: Mussarela, tomate, pimentão, cebola, ovo.</p>
-
-						<h2>R$: 39,90</h2>
-
-						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-4 animate-box" data-animate-effect="fadeIn">
-					<div class="feature-center">
-						<span class="icon">
-							<img src="images/icarai-1.png" width="240" height="150" >
-						</span>
-						<h3>Calabresa</h3>
-						<p>Ingredientes: Mussarela, tomate, calabresa, cebola.</p>
-
-						<h2>R$: 35,90</h2>
-
-						<p><a href="#" target="_blank" class="btn btn-primary">Adicionar ao carrinho</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+		
 	<footer id="gtco-footer" role="contentinfo">
 	<div id="gtco-started">
 		<div class="gtco-container">
-			<div class="row">
+			<div class="row row-pb-md">
 				<div class="col-md-8 gtco-widget">
 					<h3>Sobre Nós</h3>
-					<p>A NitPizza se destaca pela qualidade dos seus produtos e a sua eficiência no atendimento.</p>
+					<p>>A NitPizza se destaca pela qualidade dos seus produtos e a sua eficiência no atendimento.</p>
 					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.jsp">Saiba mais</a></p>
 				</div>
-				<div class="col-md-2 col-md-push-1">
+				<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1">
 					<ul class="gtco-footer-links">
+						<li><a href="index.jsp">Home</a></li>
+						<li><a href="sobre_nos.jsp">Sobre Nós</a></li>
+						<li><a href="produtos.jsp">Produtos</a></li>
+						<li><a href="cursos.jsp">Cursos</a></li>
+						<li><a href="contato.jsp">Contato</a></li>
 					</ul>
 				</div>
 			</div>
@@ -195,7 +136,7 @@
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
-						<small class="block">&copy;  2018 NitPizza. Todos os direitos reservados.</small> 
+						<small class="block">&copy; 2018 NitPizza. Todos os direitos reservados.</small> 
 					</p>
 					<p class="pull-right">
 						<ul class="gtco-social-icons pull-right">
@@ -210,20 +151,29 @@
 		</div>
 	</div>	
 	</footer>
-	</div>
+	
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 	
+	
 	<script src="js/jquery.min.js"></script>
+
+
 	<script src="js/jquery.easing.1.3.js"></script>
+
 	<script src="js/bootstrap.min.js"></script>
+
 	<script src="js/jquery.waypoints.min.js"></script>
+
 	<script src="js/owl.carousel.min.js"></script>
+
 	<script src="js/jquery.countTo.js"></script>
+
 	<script src="js/jquery.magnific-popup.min.js"></script>
 	<script src="js/magnific-popup-options.js"></script>
+
 	<script src="js/main.js"></script>
 
 	</body>

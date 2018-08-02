@@ -102,10 +102,13 @@
 				</thead>
 			</table>
 			</table>
-			<input type="submit" value="Concluir compra" class="btn btn-primary" />
+			<div class="col-md-8 col-md-offset-2 text-center">
+				<h2>Formas de Pagamento</h2>
+				<li class="btn btn-primary"><a href="cartao.jsp"><span>Cartão</span></a></li>
+				<li class="btn btn-primary"><a href="dinheiro.jsp"><span>Dinheiro</span></a></li>
+			</div>
 		</form>
 	</main>
-
 
 	<footer id="gtco-footer" role="contentinfo">
 	<div id="gtco-started">
@@ -114,7 +117,7 @@
 				<div class="col-md-8 gtco-widget">
 					<h3>Sobre Nós</h3>
 					<p>A NitPizza se destaca pela qualidade dos seus produtos e a sua eficiência no atendimento.</p>
-					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.html">Saiba mais</a></p>
+					<p><a href="file:///C:/Users/campus/Desktop/onix/sobre_nos.jsp">Saiba mais</a></p>
 				</div>
 				<div class="col-md-2 col-md-push-1">
 					<ul class="gtco-footer-links">
