@@ -14,7 +14,7 @@ public class Conexao {
 		}
 		
 		try {
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/pizza_nit","root" , "");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/pizzaria","root" , "");
 		} catch(SQLException e) {
 			throw new RuntimeException(e);
 		}

@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import com.mysql.jdbc.Statement;
+
 import modelo.Cliente;
 
 public class ClienteDao {
@@ -17,52 +19,46 @@ public class ClienteDao {
 	@SuppressWarnings("resource")
 	public void adicionaCliente(Cliente cliente) throws SQLException {
 		PreparedStatement stmt = null;
-		String sql = "insert into cliente values(null, ?,?,?,?,?), Statement.RETURN_GENERATE_KEYS";
 		
 		try {
-			stmt = conectar.prepareStatement(sql);
+			stmt = conectar.prepareStatement("insert into cliente(nome, sobrenome, cpf, usuario, senha) values(?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+			
 			stmt.setString(1, cliente.getNome());
 			stmt.setString(2, cliente.getSobrenome());
 			stmt.setString(3, cliente.getCpf());
 			stmt.setString(4, cliente.getUsuario());
 			stmt.setString(5, cliente.getSenha());
 			
-			int affectedRows = stmt.executeUpdate();
+			stmt.executeUpdate();
 			
-			if(affectedRows == 0) {
-				throw new SQLException("A criação do cliente falhou");
-			}
+			try(ResultSet rsKeys = stmt.getGeneratedKeys()){
 			
-			try(ResultSet generatedKeys = stmt.getGeneratedKeys()){
-				if(generatedKeys.next()) {
-					cliente.setIdcliente(generatedKeys.getInt(1));
-					stmt = conectar.prepareStatement("insert into contato values (null, ?, ?, ?)");
-					stmt.setInt(1, cliente.getIdcliente());
-					stmt.setString(2, cliente.getContato().getTelefone());
-					stmt.setString(3, cliente.getContato().getCelular());
-					stmt.setString(4, cliente.getContato().getEmail());
-					
-					stmt.executeUpdate();
-				}
+			if(rsKeys.next()) {
+				cliente.setIdcliente(rsKeys.getInt(1));
 				
-			}
-			try(ResultSet generatedKeys = stmt.getGeneratedKeys()){
-				if(generatedKeys.next()) {
-					cliente.setIdcliente(generatedKeys.getInt(1));
-					stmt = conectar.prepareStatement("insert into endereco values (null, ?,?,?,?,?,?,?)");
-					stmt.setInt(1, cliente.getIdcliente());
-					stmt.setString(2, cliente.getEndereco().getLogradouro());
-					stmt.setInt(3, cliente.getEndereco().getNumero());
-					stmt.setString(4, cliente.getEndereco().getComplemento());
-					stmt.setString(5, cliente.getEndereco().getCidade());
-					stmt.setString(6, cliente.getEndereco().getBairro());
-					stmt.setString(7, cliente.getEndereco().getCep());
-					
-					stmt.executeUpdate();
-			
+				stmt = conectar.prepareStatement("insert into contato(telefone, celular, email, cliente_idcliente) values(?,?,?,?)");
+				stmt.setString(1, cliente.getContato().getTelefone());
+				stmt.setString(2, cliente.getContato().getCelular());
+				stmt.setString(3, cliente.getContato().getEmail());
+				stmt.setInt(4, cliente.getIdcliente());
+				
+				stmt.executeUpdate();
+				
+										
+				stmt = conectar.prepareStatement("insert into endereco(logradouro, numero, complemento, cidade, bairro, cep, cliente_idcliente1) values(?,?,?,?,?,?,?)");
+				stmt.setString(1, cliente.getEndereco().getLogradouro());
+				stmt.setInt(2, cliente.getEndereco().getNumero());
+				stmt.setString(3, cliente.getEndereco().getComplemento());
+				stmt.setString(4, cliente.getEndereco().getCidade());
+				stmt.setString(5, cliente.getEndereco().getBairro());
+				stmt.setString(6, cliente.getEndereco().getCep());
+				stmt.setInt(7, cliente.getIdcliente());
+				
+				stmt.executeUpdate();
+				
 				}
-		
 			}
+			
 		} finally {
 			if(stmt != null)
 				stmt.close();

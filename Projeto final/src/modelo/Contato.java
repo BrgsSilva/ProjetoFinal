@@ -8,12 +8,12 @@ public class Contato {
 	
 	private Cliente cliente;
 	
+		
 	public Contato() {
 		
 	}
-	
-	
-	
+
+
 	public Contato(int idcontato, String telefone, String celular, String email, Cliente cliente) {
 		super();
 		this.idcontato = idcontato;
@@ -24,11 +24,9 @@ public class Contato {
 	}
 
 
-
 	public int getIdcontato() {
 		return idcontato;
 	}
-
 
 
 	public void setIdcontato(int idcontato) {
@@ -36,11 +34,9 @@ public class Contato {
 	}
 
 
-
 	public String getTelefone() {
 		return telefone;
 	}
-
 
 
 	public void setTelefone(String telefone) {
@@ -48,11 +44,9 @@ public class Contato {
 	}
 
 
-
 	public String getCelular() {
 		return celular;
 	}
-
 
 
 	public void setCelular(String celular) {
@@ -60,11 +54,9 @@ public class Contato {
 	}
 
 
-
 	public String getEmail() {
 		return email;
 	}
-
 
 
 	public void setEmail(String email) {
@@ -72,17 +64,14 @@ public class Contato {
 	}
 
 
-
 	public Cliente getCliente() {
 		return cliente;
 	}
 
 
-
 	public void setCliente(Cliente cliente) {
 		this.cliente = cliente;
 	}
-
 
 
 	@Override
@@ -92,7 +81,6 @@ public class Contato {
 		result = prime * result + idcontato;
 		return result;
 	}
-
 
 
 	@Override
@@ -109,5 +97,7 @@ public class Contato {
 		return true;
 	}
 
-		
 }
+	
+	
+	
