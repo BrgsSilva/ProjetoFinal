@@ -92,7 +92,7 @@
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 animate-box">
 					<h3>Digite seus Dados</h3>
-					<form method="post" action="cadastro_contato.php">
+					<form method="post" action="adicionaDados">
 						<fieldset class="col-md-12">
 							<legend>Dados Pessoais</legend>
 							<div class="col-md-6">
@@ -114,8 +114,8 @@
 							<div class= "col-md-6">
 								<div class="row form-group">
 									<div class="name col-md-12">
-										<label for="nome">Email</label>
-										<input type="text" name="email" id="email" class="form-control" placeholder="Digite o seu email">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" class="form-control" placeholder="Digite o seu email">
 									</div>
 								</div>
 							</div>
@@ -140,6 +140,22 @@
 									<div class="name col-md-12">
 										<label for="nome">Celular</label>
 										<input type="text" name="celular" id="celular" class="form-control" placeholder="(00) 00000-0000">
+									</div>
+								</div>
+							</div>
+							<div class= "col-md-6">
+								<div class="row form-group">
+									<div class="name col-md-12">
+										<label for="usuario">Usuario</label>
+										<input type="text" name="usuario" id="usuario" class="form-control" placeholder="Nome de Usuário">
+									</div>
+								</div>
+							</div>
+							<div class= "col-md-6">
+								<div class="row form-group">
+									<div class="name col-md-12">
+										<label for="senha">Senha</label>
+										<input type="password" name="senha" id="senha" class="form-control" placeholder="Senha">
 									</div>
 								</div>
 							</div>
@@ -192,6 +208,7 @@
 										<label for="nome">CEP</label>
 										<input type="text" name="cep" id="cep" class="form-control" placeholder="Digite o CEP">
 									</div>
+									<input type="submit" value="cadastrar"/>
 								</div>
 							</div>
 						</fieldset>
