@@ -211,6 +211,7 @@
 									<input type="submit" value="cadastrar"/>
 								</div>
 							</div>
+							<input type= "submit" value="Concluir cadastro" class="btn btn-primary" />
 						</fieldset>
 					</form>		
 				</div>

@@ -94,8 +94,8 @@
 							<img src="images/australia-1.png" width="240" height="150" >
 						</span>
 						<h3>Austrália</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Abacaxi, Bacon, Ovo, Presunto.</p>
+						<h2>R$: 39,90</h2>
 						<p><a href="#" class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
 				</div>
@@ -105,8 +105,8 @@
 							<img src="images/portuguesa.png" width="240" height="150" >
 						</span>
 						<h3>Portuguesa</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Mussarela, Presunto, Tomate, Ovo, Cebola, Molho de Tomate, Azeitonas.</p>
+						<h2>R$: 31,90</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
 				</div>
@@ -116,8 +116,8 @@
 							<img src="images/mussarela.png" width="240" height="150" >
 						</span>
 						<h3>Mussarela</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.!</a></p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Mussarela, Tomate, Azeitonas.</a></p>
+						<h2>R$: 28,90</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
 				</div>
@@ -133,8 +133,8 @@
 							<img src="images/brigadeiro.jpg" width="240" height="150" >
 						</span>
 						<h3>Brigadeiro</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet. <p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Chocolate, Granulado.<p>
+						<h2>R$: 28,90</h2>
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
 				</div>
@@ -144,8 +144,8 @@
 							<img src="images/calabresa.png" width="240" height="150" >
 						</span>
 						<h3>Calabresa</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Mussarela, Calabresa, Cebola, Azeitonas.</p>
+						<h2>R$: 32,90</h2>
 
 						<p><a href="#"  class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
@@ -156,8 +156,8 @@
 							<img src="images/marguerita.png" width="240" height="150" >
 						</span>
 						<h3>Marguerita</h3>
-						<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
-						<h2>R$: 45,00</h2>
+						<p>Ingredientes: Mussarela, Tomate, Parmesão, Manjericão, Azeitonas.</p>
+						<h2>R$: 34,90</h2>
 						<p><a href="#" target="_blank" class="btn btn-primary">Adicionar ao carrinho</a></p>
 					</div>
 				</div>
