@@ -81,7 +81,7 @@ DEFAULT CHARACTER SET = latin1;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `pizzaria`.`pedido` (
   `idpedido` INT(11) NOT NULL AUTO_INCREMENT,
-  `datapedio` VARCHAR(10) NOT NULL,
+  `datapedido` VARCHAR(10) NOT NULL,
   `produto_idproduto` INT(11) NOT NULL,
   `cliente_idcliente2` INT(11) NOT NULL,
   `pagamento_idpagamento` INT(11) NOT NULL,
